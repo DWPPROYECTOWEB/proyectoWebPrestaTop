@@ -1,0 +1,106 @@
+body {
+    background: rgb(17,39,86);
+    background: linear-gradient(0deg, #112756 0%, #0A0D27 100%);
+    background-attachment: fixed;
+    color:white;
+}
+
+#logo {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img {
+    width: 200px;
+  }
+
+.iconos {
+    width: 80px;
+}
+
+.ingresoDatos {
+    width: 286px;
+    height: 46px;
+    left: 44px;
+    top: 251px;
+    background-color: rgba(223, 223, 223, 0.062);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 23px;
+}
+
+.botones {
+    background: linear-gradient(101.59deg, #6D3AB0 -22.59%, #36D79D 99.29%);
+    border-radius: 28px;
+    height: 46px;
+    width: 287px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: 0px solid;
+}
+
+li {
+    list-style:none;
+}
+
+ul{
+    padding :0;
+}
+
+#button {
+    padding: 0; 
+    
+}
+
+#button li {
+    display: inline;
+}
+
+#button li a {
+    font-family: Arial;
+    font-size: 11px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    background-color: #2175bc;
+    color: #fff;
+}
+
+.articulo{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px;
+}
+
+.fotoarticulo{
+    height: 50px;
+    width: 50px;
+
+}
+
+.fotoprestamos{
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Tablet 768x377*/
+@media screen and (max-width: 768px){
+    #logo img {
+      width: 100px;
+    }
+}
+
+
+/* Monitor 768x377*/
+@media screen and (max-width: 1366px){
+    #logo img {
+      width: 100px;
+    }
+}
+
+
