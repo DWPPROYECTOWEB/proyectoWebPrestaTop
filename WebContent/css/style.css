@@ -1,8 +1,14 @@
+/*Fuente original*/
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 body {
-    background: rgb(17,39,86);
+    background: rgb(17, 39, 86);
     background: linear-gradient(0deg, #112756 0%, #0A0D27 100%);
     background-attachment: fixed;
-    color:white;
+    color: white;
+    margin: 0%;
 }
 
 #logo {
@@ -14,21 +20,37 @@ body {
 
 #logo img {
     width: 200px;
-  }
-
-.iconos {
-    width: 80px;
 }
+
+
+.seccionIngreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccionIngreso p:first-of-type {
+    font-size: 25px;
+}
+
+.logoSesion {
+    width: 150px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
 
 .ingresoDatos {
     width: 286px;
-    height: 46px;
+    height: 40px;
     left: 44px;
     top: 251px;
     background-color: rgba(223, 223, 223, 0.062);
     border: 2px solid rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
     border-radius: 23px;
+    margin-bottom: 1rem;
+    margin-top: 8px;
 }
 
 .botones {
@@ -40,67 +62,360 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     border: 0px solid;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 li {
-    list-style:none;
+    list-style: none;
 }
 
-ul{
-    padding :0;
+ul {
+    padding: 0;
 }
 
-#button {
-    padding: 0; 
-    
-}
-
-#button li {
-    display: inline;
-}
-
-#button li a {
-    font-family: Arial;
-    font-size: 11px;
+a {
+    color: #36D79D;
     text-decoration: none;
-    float: left;
-    padding: 10px;
-    background-color: #2175bc;
-    color: #fff;
 }
 
-.articulo{
+.subtitulos{
+    color: #36D79D;
+}
+
+/*MENU*/
+
+
+.menu_bar {
+    display: block;
+    width: 100%;
+    background: #ccc;
+}
+
+.menu_bar .bt-menu {
+    display: block;
+    padding: 10px;
+    background: linear-gradient(101.59deg, #6D3AB0 -22.59%, #36D79D 99.29%);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.menu_bar i {
+    font-size: 30px;
+}
+
+.menu {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background: linear-gradient(101.59deg, #6D3AB0 -22.59%, #36D79D 99.29%);
+
+}
+
+header nav {
+    display: none;
+}
+
+.menu a {
+    color: #ffff;
+    line-height: 2;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0.15em;
+    display: block;
+    padding-left: 1em;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    background-color: rgba(13, 19, 71, 0.5);
+}
+
+.menu li {
+    flex: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+.articulo {
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
-    margin:10px;
+    margin: 10px;
 }
 
-.fotoarticulo{
-    height: 50px;
-    width: 50px;
+.fotoprestamos {
+    padding: 1px;
+    float: left;
+    width: 100px;
+    height: 80px;
+}
 
+.textoarticulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.fotos {
+    width: 100px;
+    height: 70px;
+    float: left;
+    padding: 10px;
+}
+
+.titulo {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.titulo h3 {
+    justify-content: center;
+    align-items: center;
+    width: 92%;
+}
+
+.titulo a {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.iconos {
+    width: 30px;
+    height: 30px;
+}
+
+
+.contenedor-monitor {
+    display: none;
+    margin: 50px;
+
+}
+
+/*INICIAR SESION*/
+.iniciarSesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgbienvenida{
+    width: 200px;
+    align-items: left;
+}
+
+#vacio{
+    width: 100%;
+    height: 100px;
+}
+
+#parrafoBienvenida{
+    width: 300px;
+    text-align: center;
+}
+
+#tituloPrestaTop{
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;   
+}
+
+#tituloBienvenida{
+    font-size: 30px;
+    
+}
+
+/*DETALLE PRODUCTO PRESTADO*/
+.mini_imagenes{
+    width: 80x;
+    height: 80px;
+    border-radius: 10px;
 }
 
 .fotoprestamos{
-    height: 50px;
-    width: 50px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
+#bloque{
+<<<<<<< HEAD
+    width: 80%;
+=======
+>>>>>>> b6b6c8c2314158f3795beb71280b97145b168c3a
+    border-radius: 15px;
+    border: solid 1px white;
+    padding: 10px;
+    margin: 20px;
+}
 
+.tituloPrestamos{
+    font-size: 30px;
+    color: #36D79D;
+    text-align: center;
+}
+
+.tablaproductos {
+    display: flex;
+}
+
+/*AGREGAR*/
+.contenedor-agregar {
+    margin: 10px;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 60%;
+  }
+
+  .form__field {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    color: #36D79D;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: gray;
+  }
+  
+  ::placeholder {
+    color: transparent;
+  }
+
+  :placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 20px;
+  }
+
+  .form__field:focus {
+ 
+    padding-bottom: 6px;  
+    border-width: 2px;
+    border-image: linear-gradient(to right, #11998e,#38ef7d);
+    border-image-slice: 1;
+  }
+
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    color: #f0f0f0;
+  }
+  
+.seccionFaq {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccionQuienes {
+    margin: 10px;
+}
+
+.seccionPres1 {
+    display: flex;
+    flex-direction: column;
+}
 /* Tablet 768x377*/
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) {
     #logo img {
-      width: 100px;
+        width: 100px;
     }
+
+    .menu {
+        display: flex;
+        text-align: center;
+        display: block;
+    }
+
+    .menu a {
+        padding-left: 0;
+    }
+
+    .menu li {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+
+    .contenedor-monitor {
+        display: block;
+    }
+
+    .contenedor-movil {
+        display: none;
+    }
+
+    .menu_bar .bt-menu {
+        padding: 20px;
+    }
+
+    .seccionFaq {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .seccionQuienes {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .contenedor-agregar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form__group {
+        width: 400px;
+      }
+
+    
 }
 
-
-/* Monitor 768x377*/
-@media screen and (max-width: 1366px){
+/* Monitor 1366*/
+@media screen and (min-width: 1266px) {
     #logo img {
-      width: 100px;
+        width: 100px;
     }
+
+    #bloque{
+        margin: 20px;
+        border-radius: 15px;
+        border: solid 1px white;
+        width: 95%;
+        text-align: center;
+
+    }
+
+  
 }
-
-
